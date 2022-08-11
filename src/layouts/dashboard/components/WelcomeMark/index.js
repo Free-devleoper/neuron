@@ -1,6 +1,8 @@
 import { Card, Icon } from "@mui/material";
 
+import Gifn from "assets/images/white_logo.png";
 import React from "react";
+import VuiAvatar from "components/VuiAvatar";
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
 import gif from "assets/images/cardimgfree.jpg";
@@ -22,6 +24,8 @@ const WelcomeMark = () => {
           <VuiTypography color="white" variant="h3" fontWeight="bold" mb="18px">
             NEURON
           </VuiTypography>
+
+
           {/* <VuiTypography color="text" variant="h6" fontWeight="regular" mb="auto">
             Glad to see you !
           </VuiTypography> */}
@@ -52,6 +56,7 @@ const WelcomeMark = () => {
           Tap to record
           <Icon sx={{ fontWeight: "bold", ml: "5px" }}>arrow_forward</Icon>
         </VuiTypography> */}
+        <img src={Gifn} alt="logo" width="35%" />
       </VuiBox>
     </Card>
   );

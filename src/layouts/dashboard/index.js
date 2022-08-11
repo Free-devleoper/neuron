@@ -696,34 +696,20 @@ return Math.abs(Math.round(diff/365.25));
 
 
 
-           {false&&<Grid item xs={12} lg={6} xl={5}>
+           {linegraph&&<Grid item xs={12} lg={12} xl={12} justifyContent="center" >
+           <VuiTypography variant="h3" color="text" mb={2}>
+              Tommorrow's Prediction
+              </VuiTypography>
               <Card>
                 <VuiBox>
-                  <VuiBox
-                    mb="24px"
-                    height="220px"
-                    sx={{
-                      background: linearGradient(
-                        cardContent.main,
-                        cardContent.state,
-                        cardContent.deg
-                      ),
-                      borderRadius: "20px",
-                    }}
-                  >
-                    <BarChart
-                      barChartData={barChartDataDashboard}
-                      barChartOptions={barChartOptionsDashboard}
-                    />
-                  </VuiBox>
                   <VuiTypography variant="lg" color="white" fontWeight="bold" mb="5px">
-                    Active Users
+                    {Number(trainning_state.tomorrow_data).toFixed(2).toString() }$
                   </VuiTypography>
                   <VuiBox display="flex" alignItems="center" mb="40px">
                     <VuiTypography variant="button" color="success" fontWeight="bold">
-                      (+23){" "}
+                     
                       <VuiTypography variant="button" color="text" fontWeight="regular">
-                        than last week
+                       
                       </VuiTypography>
                     </VuiTypography>
                   </VuiBox>

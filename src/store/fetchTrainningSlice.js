@@ -50,7 +50,8 @@ const fetch_trainningSlice=createSlice({
             state.trainning_data.loss=action.payload.train_data.loss;
             state.trainning_data.val_loss=action.payload.train_data.val_loss;
             state.prediction_data=action.payload.prediction_data;
-            // console.log(action)
+            state.tomorrow_data=action.payload.tommorow_price;
+            console.log(action)
           //  state.trainning_data_uid=action.payload.file_name;
             state.loading=false;
         },
